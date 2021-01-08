@@ -4,7 +4,7 @@
   display: block;
   content: "";
   clear: both;
-} 
+}
 
 .inner {
   width: 1100px;
@@ -86,7 +86,7 @@ body {
 }
 
 .whatwe-inner {
- padding-top: 50px;
+  padding-top: 50px;
 }
 
 .whatwe-inner_img {
