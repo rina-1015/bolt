@@ -81,7 +81,6 @@ body {
   color: #c0c0c0;
 }
 
-
 .section-whatwe {
   background-color: #74cfae;
 }
@@ -93,6 +92,7 @@ body {
 .whatwe-inner_img {
   width: 35%;
   float: left;
+  line-height:0;
 }
 
 .whatwe-inner_text_box {
@@ -121,17 +121,22 @@ body {
   font-size: 24px;
 }
 
-.ourlast-inner_img img {
+.ourlast-inner_img {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourlast-inner_img li {
   margin-left: 100px;
   opacity: 0.7;
 }
 
-.ourlast-inner_img img:nth-child(n+4) {
+.ourlast-inner_img li:nth-child(n+4) {
   margin-top: 80px;
 }
 
-.ourlast-inner_img img:nth-child(3n+1) {
+.ourlast-inner_img li:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -181,67 +186,71 @@ body {
   padding-bottom: 100px;
 }
 
-.ourskill-innerr_title {
+.ourskill-inner_title {
   font-size: 24px;
   padding-bottom: 20px;
 }
 
-.ourskill-innerr_img img {
+.ourskill-inner_img img {
   margin-top: 70px;
   font-size: 16px;
   margin-left: 180px;
 }
 
-.ourskill-innerr_img img:first-child {
+.ourskill-inner_img img:first-child {
   margin-left: 0;
 }
 
-.ourskill-innerr_img {
+.ourskill-inner_img {
   color: #fff;
   font-size: 16px;
 }
 
-.ourskill-innerr_img_text p {
+.ourskill-inner_img_text p {
   float: left;
   margin-left: 180px;
 }
 
-.ourskill-innerr_img_text p:first-child {
+.ourskill-inner_img_text p:first-child {
   margin-left: 0;
 }
 
-.innerr_img li {
+.inner_img li {
   display: inline-block;
   margin-left: 180px;
 }
 
-.innerr_img li:first-child {
+.inner_img li:first-child {
   margin-left: 0;
 }
 
-.sns inner {
+.sns-inner {
   font-size: 0;
 }
 
 .sns_img {
-  color: #74cfae;
-  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 0px;
   padding-top: 200px;
   padding-bottom: 200px;
-  letter-spacing:-.4em;/*隙間を無くすのにfont-size: 0;で上手く行かなかった場合*/
 }
 
 .sns_img li {
-  display: inline-block;/*画像の間に隙間が出来る*/
-  padding: 10px 80px;
+  font-size: 50px;
+  width: 185px;
 }
 
-.sns_img li :first-child {
-  margin-left: 0;
+.sns_img a {
+  color: #74cfae;
+  padding: 20px 0;
+  width: 100%;
+  display: inline-block;
 }
 
 .sns_img li:hover {
   background-color: #fff;
+  width: 185px;
   transition: all 0.3;
 }
 
