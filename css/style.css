@@ -6,7 +6,6 @@
   clear: both;
 } 
 
-
 .inner {
   width: 1100px;
   margin: 0 auto; /*左右の調整*/
@@ -27,6 +26,11 @@
   background-color: #74cfae;
 }
 
+.header-box:hover {
+  color: #333;
+  transition: all 0.3;
+}
+
 main {
   font-family: Raleway;
 }
@@ -38,7 +42,6 @@ main {
 .whatwe-inner_title, .whatwe-inner_text, .ourlast-inner_mail, .ourskill-inner_title, .ourskill-innerr_title{
   color: #fff;
 }
-
 
 body {
   font-family: Lato;
@@ -61,7 +64,6 @@ body {
   text-align: center;
   background-color: #f2f2f2;
 }
-
 
 .title-inner {
   padding: 250px 0;
@@ -163,7 +165,11 @@ body {
   font-size: 12px;
   padding: 14px 20px;
   display: inline-block;
+}
 
+.ourlast-inner_mail:hover {
+  color: #333;
+  transition: all 0.3;
 }
 
 .section-ourskill {
@@ -213,16 +219,21 @@ body {
   margin-left: 0;
 }
 
-.sns {
+.sns inner {
+  font-size: 0;
+}
+
+.sns_img {
   color: #74cfae;
   font-size: 50px;
   padding-top: 200px;
   padding-bottom: 200px;
+  letter-spacing:-.4em;/*隙間を無くすのにfont-size: 0;で上手く行かなかった場合*/
 }
 
 .sns_img li {
-  display: inline-block;
-  padding: 20px 80px;
+  display: inline-block;/*画像の間に隙間が出来る*/
+  padding: 10px 80px;
 }
 
 .sns_img li :first-child {
@@ -231,10 +242,8 @@ body {
 
 .sns_img li:hover {
   background-color: #fff;
-  padding: 20px 80px;
   transition: all 0.3;
 }
-
 
 .fotter-inner {
   color: #fff;
@@ -242,5 +251,5 @@ body {
 }
 
 .fotter-inner p {
-  margin-right: 0;
+  text-align: right;
 }
