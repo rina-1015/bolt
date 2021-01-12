@@ -6,9 +6,21 @@
   clear: both;
 }
 
+.a {
+  display: inline-block;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto; /*左右の調整*/
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .header-inner {
@@ -18,21 +30,31 @@
   padding-bottom: 15px;
 }
 
-.header {
-  background-color: #fff;
-}
 
 .header-box,.whatwe-inner, .footer, .ourlast-inner_mail{
   background-color: #74cfae;
 }
 
+.header-box {
+  font-size: 12px;
+  padding: 14px 12px;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.header-box {
+  transition: all 0.3s;
+}
+
 .header-box:hover {
   color: #333;
-  transition: all 0.3;
+}
+
+body {
+  font-family: Lato;
 }
 
 main {
-  font-family: Raleway;
   background-color: #f2f2f2;
 }
 
@@ -45,6 +67,7 @@ main {
 }
 
 .whatwe-inner_title,.ourlast-inner_title,.ourskill-inner_title, .ourskill-innerr_title {
+  font-family: Raleway;
   display: flex;
   justify-content: center;
 }
@@ -53,18 +76,6 @@ main {
   text-align: center;
 }
 
-body {
-  font-family: Lato;
-}
-
-.header-box {
-  font-size: 12px;
-  padding: 14px 12px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .fa-bolt {
   font-size: 50px;
@@ -123,8 +134,8 @@ body {
 
 .ourlast-inner {
   font-size: 0;
-  margin-top: 60px;
-  margin-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .ourlast-inner_title {
@@ -140,6 +151,7 @@ body {
 .ourlast-inner_img li {
   margin-left: 100px;
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .ourlast-inner_img li:nth-child(n+4) {
@@ -151,11 +163,9 @@ body {
 }
 
 
-.ourlast-inner_img :hover {
-  transition: all 0.3s;
+.ourlast-inner_img li:hover {
   opacity: 1;
 }
-
 
 .ourlast-bottom {
   display:flex;
@@ -179,12 +189,11 @@ body {
 .ourlast-inner_mail {
   font-size: 12px;
   padding: 14px 20px;
-  display: inline-block;
+  transition: all 0.3s;
 }
 
 .ourlast-inner_mail:hover {
   color: #333;
-  transition: all 0.3;
 }
 
 .section-ourskill {
@@ -198,11 +207,13 @@ body {
 
 .ourskill-inner_title {
   font-size: 24px;
-  padding-bottom: 20px;
+}
+
+.ourskill-inner_img {
+  margin-top: 70px;
 }
 
 .ourskill-inner_img img {
-  margin-top: 70px;
   font-size: 16px;
   margin-left: 180px;
 }
@@ -261,7 +272,7 @@ body {
   width: 100%;
   display: inline-block;
   width: 185px;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 
 .sns_img li a:hover {
