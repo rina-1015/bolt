@@ -59,10 +59,6 @@ main {
   background-color: #f2f2f2;
 }
 
-.ourskill-inner {
-  background-color: #4e4e4e;
-}
-
 .whatwe-inner_title, .whatwe-inner_text, .ourlast-inner_mail, .ourskill-inner_title, .ourskill-innerr_title{
   color: #fff;
 }
@@ -104,9 +100,6 @@ main {
 
 .section-whatwe {
   background-color: #74cfae;
-}
-
-.whatwe-inner {
   padding-top: 50px;
 }
 
@@ -114,10 +107,11 @@ main {
   width: 35%;
   float: left;
   line-height:0;
+  text-align: center;
 }
 
 .whatwe-inner_text_box {
-  width: 65%;
+  width: 62%;
   float: left;
   line-height: 1.5;
 }
@@ -131,10 +125,13 @@ main {
   font-size: 20px;
 }
 
-.ourlast-inner {
-  font-size: 0;
+.ourlast {
   padding-top: 60px;
   padding-bottom: 70px;
+}
+
+.ourlast-inner {
+  font-size: 0;
 }
 
 .ourlast-inner_title {
@@ -145,6 +142,10 @@ main {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.urlast-inner_img a{
+  height: 300px;
 }
 
 .ourlast-inner_img li {
@@ -172,7 +173,7 @@ main {
 }
 
 .ourlast-inner-bottom {
-  width: 489px;
+  width: 469px;
 }
 
 .ourlast-inner_text {
@@ -183,11 +184,11 @@ main {
 .ourlast-mail a {
   margin-left: 90px;
   display: inline-block;
+  padding: 14px 20px;
 }
 
 .ourlast-inner_mail {
   font-size: 12px;
-  padding: 14px 20px;
   transition: all 0.3s;
 }
 
@@ -197,9 +198,6 @@ main {
 
 .section-ourskill {
   background-color: #4e4e4e;
-}
-
-.ourskill-inner {
   padding-top: 70px;
   padding-bottom: 100px;
 }
@@ -210,57 +208,32 @@ main {
 
 .ourskill-inner_img {
   margin-top: 70px;
-}
-
-.ourskill-inner_img img {
   font-size: 16px;
-  margin-left: 180px;
 }
 
-.ourskill-inner_img img:first-child {
-  margin-left: 0;
-}
-
-.ourskill-inner_img {
+.ourskill-inner_img p {
   text-align: center;
   color: #fff;
   font-size: 16px;
+  padding-top: 10px;
+  /*display: flex;
+  justify-content: center;*/
 }
 
-/*.ourskill-inner_img_text p {
-  float: left;
-  margin-left: 180px;
-}
-
-.ourskill-inner_img_text p:first-child {
-  margin-left: 0;
-}*/
-
-
-
-.inner_img p {
-  display: flex;
-  justify-content: center;
-}
-
-.inner_img li {
+.ourskill-inner_img li {
   display: inline-block;
   margin-left: 180px;
 }
 
-.inner_img li:first-child {
+.ourskill-inner_img li:first-child {
   margin-left: 0;
-}
-
-.sns-inner {
-  font-size: 0;
 }
 
 .sns_img {
   display: flex;
   justify-content: center;
-  font-size: 0px;
   padding: 200px 0;
+  font-size: 0px;
 }
 
 .sns_img li {
@@ -271,7 +244,6 @@ main {
 .sns_img li a {
   color: #74cfae;
   padding: 20px 0;
-  width: 100%;
   display: inline-block;
   width: 185px;
   transition: all 0.3s;
